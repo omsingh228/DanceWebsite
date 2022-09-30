@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa:wght@200&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Exo+2&family=Karla:wght@200&family=Lobster&family=Lobster+Two&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    /* background:url(../static/bg1.jpg) center no-repeat; */
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #92122a;
+    position: sticky;
+    top: 0;
+}
+#navbar ul{
+    display: flex;
+    height: 82px;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 11px 4px;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 3px 23px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+#navbar li a:hover{
+    color:#92122a;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#navbar li{
+    list-style: none;
+
+}
+div#logo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+div#logo1 img{
+    width: 115px;
+    height: 83px;
+}
+
+
+/* About-Section*/
+div#aboutSection{
+    height: 100vh;
+    padding: 10px 20px;
+}
+div#aboutSection p{
+font-size: 40px;
+font-family: 'Lobster Two', cursive;
+}
+div#aboutSection h1{
+    text-align:center;
+    font-size: 33px;
+    /* font-family: 'Lobster Two', cursive; */
+}
+
+/* Footer Section */
+#footer{
+    height: 24px;
+    color: white;
+    background-color: black;
+    padding-top: 2px;
+    text-align: center;
+    /* background-color: rgb(32, 10, 228); */
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+#footer a:hover{
+    color:#92122a;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:628px){
+    #aboutSection{
+        height: 70vh;
+    }
+}

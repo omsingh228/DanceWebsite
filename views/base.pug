@@ -1,0 +1,20 @@
+doctype html 
+//- We have copied this template from pugJs site inheritence section 1st box...
+html
+  head
+    title Nritya Dance Academy 
+    block scripts
+    block style
+  body
+    nav#navbar.top 
+        ul#navigation 
+            div#logo1 
+                img(src='../static/logo.png')
+                |NDA
+            li #[a(href = "/home") Home]
+            li #[a(href = "/about") About]
+            li #[a(href = "/contact") Contact Us]
+            li #[a(href = "/services") Services ]
+    block content
+    footer#footer  
+        |Copyright&#xa9 2022 NrityaDanceAcademy.com | #[a(href="") Privacy-policy] | All Rights Reserved.

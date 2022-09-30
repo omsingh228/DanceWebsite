@@ -1,0 +1,20 @@
+//- We have copied this template from pugJs site inheritence section 2nd box...
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+//- We have learnt how to include css in index.pug 
+block style 
+    style   
+        include ../static/styleAbout.css 
+block content 
+    div#aboutSection 
+        h1 
+            |About Us 
+        p 
+            |The Terence Lewis Contemporary Dance Company (voted India Number 1 dance company) and the Terence Lewis Professional Training |    Institute are widely-acknowledged as the countrys most popular and reputed dance organisations.
+            |Together with the Terence Lewis Dance Scholarship Foundation Trust, they make up the TL brand, which fosters creative excellence |in    the |talented, enthusiastic dancer (or aspiring dancer), raising the standards of dance in India and beyond.
+            |We work together, towards professional excellence in exploring dance in various forms such as educational, research, artistic and |    commercial ventures. We constantly strive for efficiency and customer satisfaction.
+            |Our talented team of professional dancers and instructors have all been handpicked and personally trained by our founders Terence  Lewis |and Mahrukh Dumasia; and receive ongoing coaching and regular assessments to ensure that that their skills are up-to-date.
+    

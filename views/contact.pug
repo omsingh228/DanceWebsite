@@ -1,0 +1,38 @@
+//- We have copied this template from pugJs site inheritence section 2nd box...
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+//- We have learnt how to include css in index.pug 
+block style 
+    style   
+        //- include ../static/style.css
+        include ../static/styleContact.css
+        <link rel="stylesheet" media="screen and (max-width: 832px)" href="../static/responsiveContact.css">
+
+block content 
+    div#contactSection
+        h1  
+            | Contact-Us  
+        form(action="/contact", method="post", class="myForm") 
+            div#contact-box
+                .form-group
+                    label(for='name') Name:
+                    input#name(type='text' name='Name' placeholder='Enter your Name')
+                .form-group
+                    label(for='age') Age:
+                    input#age(type='text' name='Age' placeholder='Enter your Age')
+                .form-group
+                    label(for='gender') Gender:
+                    input#gender(type='text' name='Gender' placeholder='Enter your Gender')
+                .form-group
+                    label(for='phone') Phone-Number:
+                    input#phone(type='text' name='PhoneNumber' placeholder='Enter your Phone-Number')
+                .form-group
+                    label(for='email') Email:
+                    input#email(type='email' name='Email' placeholder='Enter your Email')
+                .form-group
+                    label(for='address') Address:
+                    textarea#address(name='Address' cols='30' rows='10' placeholder='Enter your Address')
+                button.btn Submit

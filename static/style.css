@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background:url(../static/bg1.jpg) center/cover no-repeat;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #92122a;
+    position: sticky;
+    top: 0;
+}
+#navbar ul{
+    display: flex;
+    height: 82px;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 11px 4px;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 3px 23px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+#navbar li a:hover{
+    color:#92122a;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#navbar li{
+    list-style: none;
+
+}
+div#logo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+div#logo1 img{
+    width: 115px;
+    height: 83px;
+}
+
+/* Intro-Section  */
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 327px;
+    font-size: 35px;
+    margin-left: 15px;
+    text-align: center;
+    padding-top: 5px;
+    /* background-color: red; */
+}
+div#logo{
+    padding-left: 10px;
+    width: 646px;
+}
+div#logo img{
+    width: 190px;
+    height: 170px;
+}
+
+
+/* Mission-Section  */
+#missionSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #92122a;
+}
+#missionSection h1{
+    text-align: center;
+    font-size: 30px;
+}
+.card{
+    color: white;
+    border: 2px solid white;
+    margin: 23px 22px;
+    height: 210px;
+    border-radius: 9px;
+    border-bottom-right-radius: 50px;
+}
+div.card h3{
+    text-align: center;
+    padding-top: 5px;
+}
+div.card p{
+    margin: 2px 4px;
+    padding: 2px;
+}
+
+/* Sponsor-Section */
+#sponsorSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    color: white;
+    height: 50vh;
+    font-size: 35px;
+    margin-left: 10px ;
+    /* text-align: center;   */
+    padding-top: 40px;
+    /* padding-bottom: 50px; */
+    /* background-color: yellow; */
+}
+#sponsorSection div img{
+    width: 150px;
+    height: 150px;
+}
+#sponsorSection h3{
+    padding-left: 145px;
+}
+#imageSponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+section div.image {
+    background-color: #d9d5cf;
+    margin: 2px 4px;
+    height: 130px;
+    width: 145px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+section div.image:hover{
+    background-color: #f0f0f0 ;
+}
+#footer{
+    height: 24px;
+    color: white;
+    background-color: black;
+    padding-top: 2px;
+    text-align: center;
+    /* background-color: rgb(32, 10, 228); */
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+#footer a:hover{
+    color:#92122a;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Website become irresponsive if width less than 1445px */
+@media (max-width:730px){
+    #missionSection{
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background:url(../static/bg1.jpg) center/cover no-repeat;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #92122a;
+    position: sticky;
+    top: 0;
+}
+#navbar ul{
+    display: flex;
+    height: 82px;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 11px 4px;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 3px 23px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+#navbar li a:hover{
+    color:#92122a;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#navbar li{
+    list-style: none;
+
+}
+div#logo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+div#logo1 img{
+    width: 115px;
+    height: 83px;
+}
+
+/* Contact Section */
+h1{
+    color: white;
+    /* text-align: left;
+    margin-left: 383px; */
+    margin-top: 50px;
+    width: 200px;
+    margin: 4px auto;
+}
+div#contactSection{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid white; */
+}
+.form-group{
+    width: 400px;
+    margin: 5px auto;
+}
+.form-group input, .form-group textarea{
+    display: block;
+    width: 404px;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+.form-group label{
+    display: block;
+    color: white;
+    margin: 5px auto;
+}
+.btn{
+    display: block;
+    width: 90px;
+    height: 50px;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #92122a;
+    color: white;
+}
+
+
+/* Footer Section*/
+#footer{
+    height: 24px;
+    color: white;
+    background-color: black;
+    padding-top: 2px;
+    text-align: center;
+    /* background-color: rgb(32, 10, 228); */
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+#footer a:hover{
+    color:#92122a;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Website become irresponsive if width less than 1445px */
+/* @media (max-width:832px) {
+    
+} */

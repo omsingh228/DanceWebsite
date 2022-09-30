@@ -1,0 +1,54 @@
+//- We have copied this template from pugJs site inheritence section 2nd box...
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+//- We have learnt how to include css in index.pug 
+block style 
+    style   
+        include ../static/style.css 
+
+//- We are putting body of index.pug in this as it is, except footer and header as we will put navbar before body and footer in foot directly mentioned in base.pug...
+block content
+    section#introSection 
+        div#logo
+            img(src='../static/logo.png')
+        |Welcome to Nritya Dance Academy!  
+        br
+        |Eat Dance Sleep Repeat &#x267A   
+        
+    section#sponsorSection 
+        h3  
+            |Our Sponsors 
+        br
+        div#imageSponsor
+            div.image 
+                a(href="")
+                    img(src='../static/logo1.png')
+            div.image 
+                a(href="")
+                    img(src='../static/logo2.png')
+            div.image
+                a(href="")
+                    img(src='../static/logo3.png')
+            div.image
+                a(href="")
+                    img(src='../static/logo4.png')
+        
+    section#missionSection 
+        h1  
+            |Our Mission
+        div.card-box 
+            div.card
+                h3 We believe in Dance Perfection: 
+                p 
+                    |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, quaerat!
+            div.card
+                h3 Dance the way you like:
+                p 
+                    |Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates?        
+            div.card
+                h3 Expert Teaching: 
+                p 
+                    |Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptates?  
