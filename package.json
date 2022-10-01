@@ -4,6 +4,7 @@
   "description": "This is website for a popular dance academy",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Om",
@@ -14,6 +15,9 @@
     "mongoose": "^6.5.2",
     "nodemon": "^2.0.19",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "node": "16.16.0"
   },
   "keywords": [
     "dance"
